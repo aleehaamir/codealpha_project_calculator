@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Scientific Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <div id="display">0</div>
+        <div class="buttons">
+            <!-- Row 1 -->
+            <button class="btn" onclick="historyFunction()">&#8634;</button>
+            <button class="btn" onclick="toggleAngleMode()">Rad</button>
+            <button class="btn" onclick="factorial()">x!</button>
+            <button class="btn" onclick="appendOperator('(')">(</button>
+            <button class="btn" onclick="appendOperator(')')">)</button>
+            <button class="btn" onclick="percent()">%</button>
+            <button class="btn" onclick="clearDisplay()">AC</button>
+
+            <!-- Row 2 -->
+            <button class="btn" onclick="inverse()">Inv</button>
+            <button class="btn" onclick="trigonometry('sin')">sin</button>
+            <button class="btn" onclick="naturalLog()">ln</button>
+            <button class="btn" onclick="appendNumber(7)">7</button>
+            <button class="btn" onclick="appendNumber(8)">8</button>
+            <button class="btn" onclick="appendNumber(9)">9</button>
+            <button class="btn" onclick="appendOperator('+')">+</button>
+
+            <!-- Row 3 -->
+            <button class="btn" onclick="constant('pi')">&#960;</button>
+            <button class="btn" onclick="trigonometry('cos')">cos</button>
+            <button class="btn" onclick="log()">log</button>
+            <button class="btn" onclick="appendNumber(4)">4</button>
+            <button class="btn" onclick="appendNumber(5)">5</button>
+            <button class="btn" onclick="appendNumber(6)">6</button>
+            <button class="btn" onclick="appendOperator('*')">&#215;</button>
+
+            <!-- Row 4 -->
+            <button class="btn" onclick="constant('e')">e</button>
+            <button class="btn" onclick="trigonometry('tan')">tan</button>
+            <button class="btn" onclick="sqrt()">&#8730;</button>
+            <button class="btn" onclick="appendNumber(1)">1</button>
+            <button class="btn" onclick="appendNumber(2)">2</button>
+            <button class="btn" onclick="appendNumber(3)">3</button>
+            <button class="btn" onclick="appendOperator('-')">&#8722;</button>
+
+            <!-- Row 5 -->
+            <button class="btn" onclick="answer()">Ans</button>
+            <button class="btn" onclick="exp()">EXP</button>
+            <button class="btn" onclick="power()">x&#8962;</button>
+            <button class="btn" onclick="appendNumber(0)">0</button>
+            <button class="btn" onclick="appendNumber('.')">.</button>
+            <button class="btn equal-btn" onclick="calculate()">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
